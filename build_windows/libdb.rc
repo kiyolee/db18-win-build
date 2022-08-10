@@ -19,9 +19,9 @@ BEGIN
             VALUE "CompanyName", "Oracle\0"
             VALUE "FileDescription", "Berkeley DB 18.1 DLL\0"
             VALUE "FileVersion", "18.1.40\0"
-            VALUE "InternalName", "libdb181.dll\0"
+            VALUE "InternalName", DLL_NAME "\0"
             VALUE "LegalCopyright", "Copyright © Oracle 1997, 2018\0"
-            VALUE "OriginalFilename", "libdb181.dll\0"
+            VALUE "OriginalFilename", DLL_NAME "\0"
             VALUE "ProductName", "Oracle libdb\0"
             VALUE "ProductVersion", "18.1.40\0"
         END

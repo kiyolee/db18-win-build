@@ -174,7 +174,7 @@ __heap_vrfy(dbp, vdp, h, pgno, flags)
 	int i, j, ret;
 	off_t blob_size;
 	db_seq_t blob_id, file_id;
-	db_indx_t *offsets, offset, *offtbl, end;
+	db_indx_t *offsets = NULL, offset, *offtbl, end;
 	u_int32_t cnt;
 
 	if (dbp->type != DB_HEAP) {
