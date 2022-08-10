@@ -177,7 +177,7 @@ __rep_set_config(dbenv, which, on)
 	REP_BULK bulk;
 	u_int32_t mapped, orig;
 	int inmemlog, pm_ret, ret, t_ret;
-	const char * msg;
+	const char * msg = NULL;
 
 	env = dbenv->env;
 	db_rep = env->rep_handle;
