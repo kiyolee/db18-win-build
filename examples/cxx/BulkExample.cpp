@@ -234,8 +234,8 @@ void BulkExample::bulkDelete(
 {
 	Dbt key;
 	DbTxn *txnp;
-	DbMultipleDataBuilder *ptrd;
-	DbMultipleKeyDataBuilder *ptrkd;
+	DbMultipleDataBuilder *ptrd = NULL;
+	DbMultipleKeyDataBuilder *ptrkd = NULL;
 	u_int32_t flag;
 	int count, i, j, iter, ret;
 
@@ -359,8 +359,8 @@ void BulkExample::bulkSecondaryDelete(
 {
 	Dbt key;
 	DbTxn *txnp;
-	DbMultipleDataBuilder *ptrd;
-	DbMultipleKeyDataBuilder *ptrkd;
+	DbMultipleDataBuilder *ptrd = NULL;
+	DbMultipleKeyDataBuilder *ptrkd = NULL;
 	u_int32_t flag;
 	int count, i, iter, j, k, rc, ret;
 	char ch;
@@ -484,8 +484,8 @@ void BulkExample::bulkUpdate(
 	u_int32_t flag;
 	DbTxn *txnp;
 	int count, i, iter, ret;
-	DbMultipleDataBuilder *ptrd, *ptrk;
-	DbMultipleKeyDataBuilder *ptrkd;
+	DbMultipleDataBuilder *ptrd = NULL, *ptrk = NULL;
+	DbMultipleKeyDataBuilder *ptrkd = NULL;
 
 	txnp = NULL;
 	count = flag = iter = ret = 0;

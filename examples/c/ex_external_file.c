@@ -265,7 +265,7 @@ db_ext_file_example(home, errfp, progname)
 		}
 		if (strncmp((char *)data.data, "abcdefghijklmno", 15) != 0)
 			printf("external file data mismatch: key %d; value %.15s\n",
-				i, data.data);
+				i, (const char *)data.data);
 	}
 	
 	/*

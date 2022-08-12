@@ -153,7 +153,7 @@ int main(argc, argv)
 {
     extern char *optarg;
     extern int optind;
-    const char *dbname, *env_home;
+    const char *dbname = NULL, *env_home = NULL;
     char ch;
 
     /*
