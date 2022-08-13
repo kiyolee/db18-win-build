@@ -1169,7 +1169,9 @@ __repmgr_read_from_site(env, conn)
 	 * other branches return.)
 	 */
 	for (;;) {
+#if defined(HAVE_REPMGR_SSL)
 finish_io:
+#endif
 		switch ((ret = __repmgr_read_conn(conn))) {
 #ifndef DB_WIN32
 		case EINTR:
@@ -2800,8 +2802,8 @@ __repmgr_write_some(env, conn)
 	int bytes, ret;
 #if defined(HAVE_REPMGR_SSL)
 	SSL *ssl;
-#endif	
 	int error_code;
+#endif
 	int use_ssl_api;
 	int write_error;
 

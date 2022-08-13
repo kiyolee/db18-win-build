@@ -80,7 +80,7 @@ typedef struct {
 	int	  indx;				/* Indexed */
 	DB	 *secondary;			/* Secondary index handle */
 
-#define	FIELD_OFFSET(field)	((size_t)(&(((DbRecord *)0)->field)))
+#define	DB_FIELD_OFFSET(field)	((size_t)(&(((DbRecord *)0)->field)))
 	size_t	  offset;			/* DbRecord field offset */
 } DbField;
 

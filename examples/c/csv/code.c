@@ -373,7 +373,7 @@ code_source()
 		fprintf(cfp, "\n\t    %s,", type_to_string(f->type));
 		fprintf(cfp, " %d,", f->indx ? 1 : 0);
 		fprintf(cfp, " NULL,");
-		fprintf(cfp, " FIELD_OFFSET(%s)},\n", f->name);
+		fprintf(cfp, " DB_FIELD_OFFSET(%s)},\n", f->name);
 	}
 	fprintf(cfp, "\t{NULL, 0, STRING, 0, NULL, 0}\n};\n");
 
